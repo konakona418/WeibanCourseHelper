@@ -16,7 +16,7 @@ class Conf:
 
     # Cryptography
     KEY_SZ = 128
-    KEY: bytes = "xie2gg".encode("utf-8").ljust(KEY_SZ // 8, b"\x00")
+    KEY: bytes = "wbs512".encode("utf-8").ljust(KEY_SZ // 8, b"\x00")
     IV = b""
 
     def parse_conf(self):
